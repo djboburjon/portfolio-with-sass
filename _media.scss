@@ -61,8 +61,11 @@
 }
 
 @media screen and (max-width: 1920px) {
-  .contact {
-    padding: 3rem 16rem;
+  .sec2,
+  .sec3,
+  .sec4,
+  .sec5 {
+    padding: 6rem 12rem;
   }
 }
 
@@ -70,8 +73,10 @@
   header {
     padding: 0 !important;
   }
+
   .section {
-    padding: 7rem 11rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
   }
   .contact-content-con {
     flex-direction: column;
@@ -86,6 +91,19 @@
   .contact-content-con .right-contact .i-c-2 :last-child {
     margin-left: 0;
     margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .header-content {
+    .left-header {
+      .image {
+        width: 70%;
+      }
+    }
+    .right-header {
+      padding-right: 8rem;
+    }
   }
 }
 
@@ -119,7 +137,8 @@
 
 @media screen and (max-width: 970px) {
   .section {
-    padding: 7rem 6rem;
+    padding: 0 6rem;
+    padding-top: 7rem !important;
   }
 
   header {
@@ -156,20 +175,6 @@
     margin: 0 auto;
     width: 90%;
   }
-
-  .controlls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
-    justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey-5);
-    .control {
-      margin: 0.6rem 1rem;
-    }
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -194,9 +199,25 @@
       }
     }
   }
+  .controlls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+    .control {
+      margin: 0.6rem 1rem;
+    }
+  }
 }
 
 @media screen and (max-width: 450px) {
+  .section {
+    padding-top: 5rem !important;
+  }
   .controlls {
     .control {
       margin: 0.6rem 0.5rem;
